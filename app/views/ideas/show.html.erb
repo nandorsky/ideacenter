@@ -4,8 +4,14 @@
             <p>
               <%= @idea.description %>
             </p>
-            <%= link_to 'Edit', edit_idea_path(@idea) %> |
+            <p>
+              <%= @idea.author %>
+            </p>
+            
+                <%= link_to 'Edit', edit_idea_path(@idea) %> |
+            
             <%= link_to 'Back', ideas_path %>
+
         </div>
     </div>
 </div>

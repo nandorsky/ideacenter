@@ -1,5 +1,4 @@
 class Idea < ActiveRecord::Base
-  attr_accessible :description
+  attr_accessible :description, :region, :author, :summary, :url, :typeofidea, :contact
 
-  validates :description, presence: true
 end
