@@ -57,7 +57,7 @@
   <%= f.input :typeofidea, collection: [ "Event", "Group", "Guide", "Organization", "Program" ], label: 'Type of Idea' %>
   <%= f.input :author, label: 'Author' %>
   <%= f.input :contact, label: 'Authors Email Address' %>
-  <%= f.input :problem, as: :check_boxes, collection: [ "Density", "Capital" ], label: 'Problem It Addresses' %>
+  <%= f.input :problem, as: :check_boxes, label: 'Problem It Addresses', collection: [ "Density", "Capital" ] %>
   <%= f.input :summary, input_html: { rows: "12" }, label: 'Summary' %>
   <%= f.input :url, label: 'URL' %>
 
