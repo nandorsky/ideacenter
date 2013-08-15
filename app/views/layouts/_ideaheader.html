@@ -1,0 +1,19 @@
+
+<link href="http://www.up.co/css/main.css" media="all" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+
+h1 {
+    color: white;
+    margin-left: 10px;
+}
+
+</style>
+
+<h1>UP Global's Idea Center</h1>
+
+ <% if user_signed_in? %>
+    <a class="btn btn-success" href="<%= new_idea_path %>">New Idea</a>
+ <% else %>
+
+ <% end %>

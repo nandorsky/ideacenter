@@ -1,13 +1,13 @@
-<div class="row">
+<%= render 'layouts/header' %>
 
-    <div class="span12">
+<div class="row well span10">
+<%= link_to 'Back To Ideas', ideas_path %><br />
+    <div class="span9">
         <h4><%= title %></h4>
     </div>
 
 
-
-<div class="span8">
-<table class="table">
+<table class="table span8">
 
 <tbody>
     <tr>
@@ -47,5 +47,4 @@
             <%= link_to 'Back', ideas_path %>
 
 
-    </div>
 </div>
