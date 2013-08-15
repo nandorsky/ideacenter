@@ -1,14 +1,18 @@
-<h1>Idea Center</h1>
+<h1>UP Global's Idea Center</h1>
 
+ <% if user_signed_in? %>
     <a class="btn btn-success" href="<%= new_idea_path %>">New Idea</a>
+ <% else %>
+
+ <% end %>
 
 
     <table class="table table-striped">
         <thead>
             <tr>
                 <th>Title</th>
-                <th>Type of Idea</th>
-                <th>Region</th>
+                <th>Issue Addressed</th>
+                <th>Community</th>
                 <th></th>
             </tr>
         </thead>

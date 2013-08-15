@@ -11,12 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130627182443) do
+ActiveRecord::Schema.define(:version => 20130815154811) do
 
   create_table "ideas", :force => true do |t|
     t.string   "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
     t.integer  "user_id"
     t.string   "region"
     t.string   "author"
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(:version => 20130627182443) do
     t.string   "url"
     t.string   "typeofidea"
     t.string   "contact"
+    t.text     "idea_descrip"
+    t.string   "problem"
   end
 
   add_index "ideas", ["user_id"], :name => "index_ideas_on_user_id"

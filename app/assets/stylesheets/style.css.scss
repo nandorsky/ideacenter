@@ -10,10 +10,21 @@ body{
 @import 'bootstrap-responsive';
 
 
-.footer{
+.footer	{
     margin-top: 50px;
     color: $grayLight;
     a{
         color: $gray;
     }
+}
+
+#homeWrapper {
+background-color: #262e3b;
+background: url("UP_InterimSiteHeaderScaled.jpg") 50% 50%;
+background-repeat: no-repeat;
+background-size: 140%;
+}
+
+.homewrapper h1 {
+color:white;
 }

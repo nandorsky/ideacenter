@@ -1,28 +1,44 @@
 <div class="row">
-<div class="span6 offset3">
+
+    <div class="span12">
+        <h4><%= title %></h4>
+    </div>
+
+
+
+<div class="span8">
 <table class="table">
 
 <tbody>
     <tr>
         <td>Idea</td>
-        <td><%= @idea.description %></td>
+        <td><%= title %></td>
     </tr>
     <tr>
         <td>Author</td>
-        <td><%= @idea.author %></td>
+        <td><%= author %></td>
     </tr>
     <tr>
-        <td></td>
-        <td><%= @idea.contact%></td>
+        <td>Description</td>
+        <td><%= description %></td>
     </tr>
     <tr>
-        <td></td>
-        <td><%= @idea.description %></td>
+        <td>Contact</td>
+        <td><%= contact %></td>
     </tr>
     <tr>
-        <td>URL</td>
-        <td><%= @idea.description %></td>
+        <td>Problem it Addresses</td>
+        <td><%= problem %></td>
     </tr>
+    <tr>
+        <td>View the Playbook</td>
+        <td><a href="<%= playbook %>" class="btn btn-danger" target="_blank">View Playbook</a></td>
+    </tr>
+    <tr>
+        <td>Contact Author</td>
+        <td><a href="mailto:" class="btn btn-danger">Contact</a></td>
+    </tr>
+
 </tbody>
 </table>
             
