@@ -3,10 +3,19 @@
   <head>
     <title>Idea Center</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
+    <% if user_signed_in? %>
+    <link />
+    <% else %>
+    <link href="http://www.up.co/css/main.css" media="all" rel="stylesheet" type="text/css" />
+    <% end %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
   </head>
+  <% if user_signed_in? %>
+  <body>
+  <% else %>
   <body id="homeWrapper" style="background-size: 140%; height: 88%; min-height: 88%;">
+  <% end %>
     <%= render 'layouts/header' %>
 
         <div class="container">

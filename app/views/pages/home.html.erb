@@ -1,24 +1,31 @@
-<link href="http://www.up.co/css/main.css" media="all" rel="stylesheet" type="text/css" />
-
 <div>
+  <% if user_signed_in? %>
+  <div class="hero-unit">
+
+            <a class="btn btn-danger btn-large" href="/ideas">
+              Submit Ideas
+              <sup>+</sup>
+            </a>
+  </div>
+  <% else %>
   <div id="home">
     <div class="content" style="margin-top:60px; margin-left:200px; margin-right:200px;">
       <h1 class="logo ir">
         <span></span>
       </h1>
-      <h1>Idea Center</h1>
+      <br /><h1>Idea Center</h1>
       <h2 class="introduction">
         Ideas to help strengthen your entrepreneurial community.
       </h2>
         <div class="rowCol submit">
             <a class="btn btn-danger btn-large" href="/ideas">
               View Ideas
-              <sup>+</sup>
             </a>
           </div>
 
   </div>
 </div>
+  <% end %>
 
 
 
